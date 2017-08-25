@@ -22,7 +22,7 @@ public class Greeter {
 		
 		// Passing a behavior using an Anonymous Lamda Expression
 		Greeting helloLamdaExpression = () -> System.out.println("Hello Lamda World...!!!");
-		greeter1.greet(helloLamdaExpression);
+		greeter1.greet(() -> System.out.println("Hello Lamda World...!!!"));
 	}
 	
 	public void greet(Greeting greet) {
