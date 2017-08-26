@@ -14,15 +14,14 @@ public class Greeter {
 		Greeting innerClassLamda = new Greeting() {
 			@Override
 			public void perform() {
-				// TODO Auto-generated method stub
 				System.out.println("Hello Inner Class World...!!!");
 			}
 		};
 		greeter1.greet(innerClassLamda);
 		
-		// Passing a behavior using an Anonymous Lamda Expression
-		Greeting helloLamdaExpression = () -> System.out.println("Hello Lamda World...!!!");
-		greeter1.greet(() -> System.out.println("Hello Lamda World...!!!"));
+		// Passing a behavior using an Anonymous Lambda Expression
+		//Greeting helloLamdaExpression = () -> System.out.println("Hello Lambda World...!!!");
+		greeter1.greet(() -> System.out.println("Hello Lambda World...!!!"));
 	}
 	
 	public void greet(Greeting greet) {
