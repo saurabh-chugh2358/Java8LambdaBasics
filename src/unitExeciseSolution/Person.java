@@ -1,9 +1,9 @@
-package UnitExcercise1MySolution;
+package unitExeciseSolution;
 
 public class Person {
-	String firstName;
-	String lastName;
-	int age;
+	private String firstName;
+	private String lastName;
+	private int age;
 	
 	public Person(String firstName, String lastName, int age) {
 		super();
@@ -29,5 +29,13 @@ public class Person {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	
+	@Override
+	public String toString(){
+		return "First Name: "+this.firstName + "\n" +
+				"Last Name: "+this.lastName + "\n" +
+				"Age: "+this.age;
+		
 	}
 }

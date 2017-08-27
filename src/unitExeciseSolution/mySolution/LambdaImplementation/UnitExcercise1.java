@@ -1,9 +1,10 @@
-package UnitExcercise1MySolution;
+package unitExeciseSolution.mySolution.LambdaImplementation;
 import java.util.Collections;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ListIterator;
 
+import unitExeciseSolution.Person;
 
 public class UnitExcercise1 {
 
@@ -19,8 +20,7 @@ public class UnitExcercise1 {
 		
 		// Step1: Sort List By Last Name...
 		System.out.println("Step1: Sort List By Last Name...");
-		LastNameCompare comparator = new LastNameCompare();
-		Collections.sort(people, comparator);
+		Collections.sort(people, (Person person1, Person person2) -> person1.getLastName().compareTo(person2.getLastName()));
 		
 		
 		// Step2: Create a Method that prints all the elements in the list...

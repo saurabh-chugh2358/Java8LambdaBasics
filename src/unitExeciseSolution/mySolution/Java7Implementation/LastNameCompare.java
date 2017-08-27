@@ -1,6 +1,8 @@
-package UnitExcercise1MySolution;
+package unitExeciseSolution.mySolution.Java7Implementation;
 
 import java.util.Comparator;
+
+import unitExeciseSolution.Person;
 
 public class LastNameCompare implements Comparator<Person>{
 
