@@ -8,7 +8,13 @@ public class ExceptionHandlingExample {
 		int[] numbers = {1,2,3,4};
 		int key = 2;
 		
-		process(numbers, key, (v, k)->System.out.println(v+k));
+		process(numbers, key, (v, k)->{
+			try {
+				System.out.println(v/(v-k));
+			} catch (ArithmeticException e) {
+				System.out.println("An Arithmetic Exception Happenned...!");
+			}
+		});
 	}
 
 	public static void process(int[] numbers, int key, BiConsumer<Integer, Integer> consumer) {
