@@ -1,4 +1,4 @@
-package unitExeciseSolution.jbSolution;
+package unitExeciseSolution.jbSolution.Java7Implementation;
 
 import unitExeciseSolution.Person;
 

@@ -2,9 +2,9 @@ package unitExeciseSolution.jbSolution.LambdaImplementation;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 import unitExeciseSolution.Person;
-import unitExeciseSolution.jbSolution.Condition;
 
 
 public class UnitExcercise1 {
@@ -35,7 +35,7 @@ public class UnitExcercise1 {
 
 	}
 	
-	public static void displayConditionally(List<Person> people, Condition condition) {
+	public static void displayConditionally(List<Person> people, Predicate<Person> condition) {
 		for(Person p: people){
 			if(condition.test(p)){
 				System.out.println(p);

@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.ListIterator;
 
 import unitExeciseSolution.Person;
-import unitExeciseSolution.jbSolution.Condition;
 
 public class UnitExcercise1 {
 
