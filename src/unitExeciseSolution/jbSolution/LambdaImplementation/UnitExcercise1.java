@@ -2,6 +2,7 @@ package unitExeciseSolution.jbSolution.LambdaImplementation;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 import unitExeciseSolution.Person;
@@ -27,18 +28,20 @@ public class UnitExcercise1 {
 		
 		// Step2: Create a Method that prints all the elements in the list...
 		System.out.println("Step2: Create a Method that prints all the elements in the list...");
-		displayConditionally(people, (p) -> true);
+		displayConditionally(people, p -> true, 
+							 p -> System.out.println(p));
 		
 		// Step3: Create a Method that prints all people that have last name beginning with C...
 		System.out.println("Step3: Create a Method that prints all people that have last name beginning with C...");
-		displayConditionally(people, (p) -> p.getLastName().startsWith(conditionalStr));
+		displayConditionally(people, p -> p.getLastName().startsWith(conditionalStr), 
+									 p-> System.out.println(p.getLastName()));
 
 	}
 	
-	public static void displayConditionally(List<Person> people, Predicate<Person> condition) {
+	public static void displayConditionally(List<Person> people, Predicate<Person> condition, Consumer<Person> consumer) {
 		for(Person p: people){
 			if(condition.test(p)){
-				System.out.println(p);
+				consumer.accept(p);
 			}
 		}
 	}
