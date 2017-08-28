@@ -1,4 +1,6 @@
-package closureExample;
+package references.closureExample;
+
+import references.Process;
 
 public class ClosuresExamples {
 
