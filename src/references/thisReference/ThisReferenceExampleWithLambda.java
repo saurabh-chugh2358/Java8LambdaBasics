@@ -14,6 +14,8 @@ public class ThisReferenceExampleWithLambda {
 	}
 	
 	public void execute() {
+		// Here 'this' keyword will work because Lambda Expression is not
+		// part of a static method rather class method, or a behavior attached to a particular object
 		doProcess(10, i -> {
 			System.out.println("Lambda Expression | Value of i: "+i);
 			System.out.println(this);

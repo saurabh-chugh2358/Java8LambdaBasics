@@ -1,7 +1,6 @@
 package unit3.methodReference;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -11,7 +10,6 @@ import unitExeciseSolution.Person;
 public class MethodReferenceExample2 {
 
 	public static void main(String[] args) {
-		String conditionalStr = "C";
 		List<Person> people = Arrays.asList(
 				new Person("Charles", "Dickens", 60),
 				new Person("Lewis", "Caroll", 42),

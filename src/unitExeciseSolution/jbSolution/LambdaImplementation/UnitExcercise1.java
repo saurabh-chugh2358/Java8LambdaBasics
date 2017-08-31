@@ -23,6 +23,7 @@ public class UnitExcercise1 {
 		
 		// Step1: Sort List By Last Name...
 		System.out.println("Step1: Sort List By Last Name...");
+		// Defining Comparator.toCompare through Lambda Expression.
 		Collections.sort(people, (person1, person2) -> person1.getLastName().compareTo(person2.getLastName()));
 		
 		
@@ -33,6 +34,7 @@ public class UnitExcercise1 {
 		
 		// Step3: Create a Method that prints all people that have last name beginning with C...
 		System.out.println("Step3: Create a Method that prints all people that have last name beginning with C...");
+		// Passing conditional behavior as an argument.
 		displayConditionally(people, p -> p.getLastName().startsWith(conditionalStr), 
 									 p-> System.out.println(p.getLastName()));
 

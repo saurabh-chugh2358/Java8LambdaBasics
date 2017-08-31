@@ -1,7 +1,6 @@
 package unit3.methodReference;
 
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 import unitExeciseSolution.Person;
@@ -27,6 +26,10 @@ public class CollectionIterationExample {
 			System.out.println(p);
 		}
 		
+		// It is an internal iterator
+		// This makes it very easy for the processor to run the statements in multiple threads.
+		// Here you are not specifying any particular sequence/order of processing
+		// It is more compatible for parallel computing.
 		System.out.println("Using Lambda For Each Loop");
 		people.forEach(System.out::println);
 	}

@@ -1,3 +1,4 @@
+package FirstExample.Greeter;
 
 @FunctionalInterface
 public interface Greeting {
